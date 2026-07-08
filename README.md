@@ -16,7 +16,7 @@ A payments company's leadership team suspects the platform is losing revenue to 
 
 Data Model (ERD)
 The raw file is a single flat export (typical of a data warehouse extract). To analyze it properly, I conceptually decomposed it into a relational entity model, reflecting how this data would actually be structured in a production payments database:
- 
+ https://github.com/erdooassignment-prog/fintech-data-analytics-portfolio/blob/main/Screenshot%202026-07-03%20215904.png
 Methodology
 A five-stage, reproducible pipeline is used, the same structure applied to production ETL/data quality work:
 Stage	Actions
