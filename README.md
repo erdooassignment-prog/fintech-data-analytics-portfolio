@@ -1,4 +1,4 @@
-# Detecting Revenue Leakage in 1M+ Digital Payments
+# Detecting Revenue Leakage
 A data analytics case study on transaction failure, data integrity, and revenue risk across a multi-country digital payments platform.
 
 ## Executive Summary
@@ -6,7 +6,7 @@ This project analyzes 1,005,000 digital transactions worth a combined $4.78B, ge
 
 ## Business Problem
 "Why is a meaningful share of our transaction volume failing to convert into completed revenue, and can we trust our data enough to act on it?"
-A payments company's leadership team suspects the platform is losing revenue to failed and pending transactions but lacks confidence in the underlying data to quantify it. Stakeholders need answers to:
+ The leadership team of Palmpay suspects that the platform is losing revenue to failed and pending transactions and also lacks confidence in the underlying data to quantify it. Stakeholders need answers to:
 1.	How much revenue is at risk from failed, pending, and refunded transactions?
 2.	Which country, payment method, or channel is risk concentrated?
 3.	Is the data reliable enough to build an executive dashboard on, or does it need remediation first?
