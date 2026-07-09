@@ -13,7 +13,9 @@ This project analyzes 1,005,000 digital transactions worth a combined $4.78B, ge
 4.	What should the business do next to reduce failure rates and protect revenue?
 
 ## Data Model (ERD)
-The raw file is a single flat export (typical of a data warehouse extract). To analyze it properly, I conceptually decomposed it into a relational entity model, reflecting how this data would actually be structured in a production payments database:
+The raw file is a single flat export (typical of a data warehouse extract). To analyze it properly, I conceptually decomposed it into a relational entity model, reflecting how this data would actually be structured in a production payments database.
+<img width="595" height="625" alt="image" src="https://github.com/user-attachments/assets/a2911881-31ea-4145-a372-e6aaee65be87" />
+
  https://github.com/erdooassignment-prog/fintech-data-analytics-portfolio/blob/main/Screenshot%202026-07-03%20215904.png
 
 ## Methodology
