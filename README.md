@@ -16,8 +16,6 @@ This project analyzes 1,005,000 digital transactions worth a combined $4.78B, ge
 The raw file is a single flat export (typical of a data warehouse extract). To analyze it properly, I conceptually decomposed it into a relational entity model, reflecting how this data would actually be structured in a production payments database.
 <img width="595" height="625" alt="image" src="https://github.com/user-attachments/assets/a2911881-31ea-4145-a372-e6aaee65be87" />
 
- https://github.com/erdooassignment-prog/fintech-data-analytics-portfolio/blob/main/Screenshot%202026-07-03%20215904.png
-
 ## Methodology
 A five-stage, reproducible pipeline is used, the same structure applied to production ETL/data quality work:
 Stage	Actions
@@ -42,11 +40,9 @@ Analytical & Business
 •	Executive communication — insight framed for decision-makers, not just analysts
 
 ## Key finding and Insight
-
-https://github.com/erdooassignment-prog/fintech-data-analytics-portfolio/blob/main/Screenshot%202026-07-03%20215958.png
-
 The Failure Problem Is Systemic, Not Regional
 Failure and pending rates land within 0.2 percentage points of each other across every country (12.9–13.1% combined) and all four payment methods (13%) indicating the issue is not localized to one region or rail, but is likely a systemic platform or processing issue (e.g., timeout handling, retry logic, or downstream banking-partner reliability) rather than a market-specific problem. 
+<img width="951" height="625" alt="image" src="https://github.com/user-attachments/assets/6a40fe36-43c0-4f69-94e6-2691eb6deb2d" />
 
 ## Recommendations to the business:
 1.	Investigate /market-specific fixes.
