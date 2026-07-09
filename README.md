@@ -27,7 +27,7 @@ Stage	Actions
 
 ## Technical Skills Demonstrated
 
-•	Data profiling & quality auditing at scale (1M+ rows) with Python (Pandas, NumPy)
+•	Data profiling & quality auditing at scale (1M+ rows) with Python
 •	Data cleaning: null handling, deduplication, date parsing/validation, outlier detection
 •	Exploratory data analysis (EDA) & segmentation analysis
 •	Data modeling / ERD design (relational thinking, star-schema readiness)
@@ -39,23 +39,22 @@ Analytical & Business
 •	Risk quantification (converting failure rates into dollar exposure)
 •	Executive communication — insight framed for decision-makers, not just analysts
 
-## Result & Dashboard
+## Key finding and Insight
 
 https://github.com/erdooassignment-prog/fintech-data-analytics-portfolio/blob/main/Screenshot%202026-07-03%20215958.png
 
-Key Finding: The Failure Problem Is Systemic, Not Regional
+The Failure Problem Is Systemic, Not Regional
 Failure and pending rates land within 0.2 percentage points of each other across every country (12.9–13.1% combined) and all four payment methods (13%) indicating the issue is not localized to one region or rail, but is likely a systemic platform or processing issue (e.g., timeout handling, retry logic, or downstream banking-partner reliability) rather than a market-specific problem. 
 
-## Correction to an Earlier Assumption
-An earlier draft insight claimed "USSD dominance in mobile-money markets vs. Card usage elsewhere." I checked against the data, this doesn't hold. Payment method share is 25% Card / 25% Transfer / 25% USSD / 25% Wallet in every single country, including Nigeria and Kenya. That pattern is consistent with a synthetically generated, uniformly randomized dataset rather than real regional payment behavior, and the dashboard reports the verified split instead.
 ## Recommendations to the business:
 1.	Investigate /market-specific fixes.
 2.	Recover the $619M at-risk pipeline — Build automated retry logic for "Pending" transactions before they lapse into "Failed," which alone could recover a meaningful share of the $237M currently stuck in Pending.
 3.	Fix data capture at the source — The payment method and device fields are missing on 20–25% of records; this isn't just a reporting inconvenience, it's blocking root-cause analysis of why transactions fail.
 4.	Establish a recurring data quality SLA — Bake duplicate/invalid-date checks into the ingestion pipeline so this audit doesn't need to be repeated manually every quarter.
 5.	Institute the Data Trust Score as a standing dashboard tile so any future metric is reported alongside its confidence level.
-Next Steps
-Join with a hypothetical customer support ticket log to test whether failed transactions correlate with support volume/churn
+
+## Next Steps
+Join a hypothetical customer support ticket log to test whether failed transactions correlate with support volume/churn
 Apply time-series forecasting to project future failure volume and $ at risk
 Run a statistical test (chi-square) to formally confirm failure rate is independent of country/payment method
 Package the cleaning pipeline into a reusable Python module/CLI for future data drops
